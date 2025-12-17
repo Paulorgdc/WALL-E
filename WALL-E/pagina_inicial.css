@@ -1,0 +1,103 @@
+/* Reseta o estilo padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Logo da UNIVAG */
+.logounivag1 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* Estilo do título principal */
+h1 {
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Caixa de login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-box h1 {
+  font-size: 30;
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Estilo do subtítulo e instruções */
+p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para os botões de login */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Estilo para o botão de login */
+.login-button {
+  display: block;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+  .logounivag1 {
+      width: 80%;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  .login-box {
+      padding: 20px;
+      width: 90%;
+  }
+
+  .login-button {
+      font-size: 16px;
+  }
+}

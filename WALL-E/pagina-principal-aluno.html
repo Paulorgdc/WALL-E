@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal do Aluno</title>
+  <link rel="stylesheet" href="pagina-principal-aluno.css">
+  <style>
+    /* Estilização para o chat */
+    .chat-container {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f8f9fa;
+      border-top: 2px solid #ddd;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+    }
+
+    .chat-header {
+      font-size: 18px;
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .chat-box {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .chat-message {
+      margin-bottom: 10px;
+    }
+
+    .chat-message.student {
+      text-align: right;
+      color: #007bff;
+    }
+
+    .chat-message.ia {
+      text-align: left;
+      color: #28a745;
+    }
+
+    .chat-input-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .chat-input-container input {
+      flex: 1;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .chat-input-container button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .chat-input-container button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header class="top-bar">
+    <img src="./assets/images/logo1.png" alt="Logo da Universidade" class="logo">
+  </header>
+  <main class="dashboard">
+    <section class="welcome-section">
+      <h1>Bem-vindo, <span id="student-name">João Silva</span></h1>
+      <p>Curso: <span id="student-course">Engenharia de Software</span></p>
+    </section>
+    <section class="subjects-section">
+      <h2>Matérias Selecionadas</h2>
+      <div class="subjects">
+        <div class="subject-card">
+          <h3>Matemática</h3>
+          <p>Aprenda conceitos fundamentais e avançados.</p>
+        </div>
+        <div class="subject-card">
+          <h3>Lógica de Programação</h3>
+          <p>Desenvolva habilidades para resolver problemas com algoritmos.</p>
+        </div>
+        <div class="subject-card">
+          <h3>Banco de Dados</h3>
+          <p>Entenda como projetar e gerenciar bases de dados.</p>
+        </div>
+        <div class="subject-card">
+          <h3>Algoritmos Avançados</h3>
+          <p>Explore técnicas para otimizar seus códigos.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Centro Universitário de Várzea Grande &copy; 2024</p>
+  </footer>
+
+  <!-- Simulação do Chat -->
+  <div class="chat-container">
+    <div class="chat-header">Chat Simulado</div>
+    <div class="chat-box" id="chat-box">
+      <div class="chat-message student">O que é um banco de dados?</div>
+      <div class="chat-message ia">Um banco de dados é uma coleção organizada de informações ou dados que podem ser acessados, gerenciados e atualizados.</div>
+    </div>
+    <div class="chat-input-container">
+      <input id="chat-input" type="text" placeholder="Escreva sua pergunta..." disabled>
+      <button disabled>Enviar</button>
+    </div>
+  </div>
+</body>
+</html>

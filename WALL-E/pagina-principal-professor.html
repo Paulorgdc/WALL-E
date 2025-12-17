@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal do Professor</title>
+  <link rel="stylesheet" href="pagina-principal-professor.css">
+</head>
+<body>
+  <header class="top-bar">
+    <img src="./assets/images/logo1.png" alt="Logo da Universidade" class="logo">
+  </header>
+  <main class="dashboard">
+    <section class="welcome-section">
+      <h1>Bem-vindo, <span id="professor-name">Professor Carlos Souza</span></h1>
+      <p>Matéria Atual: <span id="professor-subject">Lógica de Programação</span></p>
+    </section>
+    <section class="classes-section">
+      <h2>Detalhes das Aulas</h2>
+      <div class="classes">
+        <div class="class-card" onclick="showStudents('1º Semestre - A')">
+          <h3>Turma: 1º Semestre - A</h3>
+          <p>Horário: Segunda e Quarta - 10:00 às 12:00</p>
+          <p>Sala: 205</p>
+        </div>
+        <div class="class-card" onclick="showStudents('3º Semestre - B')">
+          <h3>Turma: 3º Semestre - B</h3>
+          <p>Horário: Terça e Quinta - 14:00 às 16:00</p>
+          <p>Sala: 308</p>
+        </div>
+        <div class="class-card" onclick="showStudents('5º Semestre - C')">
+          <h3>Turma: 5º Semestre - C</h3>
+          <p>Horário: Sexta - 08:00 às 10:00</p>
+          <p>Sala: 401</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2024 Centro Universitário de Várzea Grande. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Modal para Alunos -->
+  <div id="student-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Alunos da <span id="class-name"></span></h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome do Aluno</th>
+            <th>Matrícula</th>
+            <th>Desempenho</th>
+          </tr>
+        </thead>
+        <tbody id="student-list">
+          <!-- Os dados serão preenchidos dinamicamente -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script-professor.js"></script>
+</body>
+</html>

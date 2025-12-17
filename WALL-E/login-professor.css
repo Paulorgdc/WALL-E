@@ -1,0 +1,98 @@
+/* Estilo global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7; /* Fundo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container principal */
+  .login-container {
+    background: #ffffff; /* Fundo branco */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  /* Logo da universidade */
+  .university-logo {
+    max-width: 100px; /* Tamanho da logo */
+    margin: 0 auto 20px; /* Espaço abaixo da logo */
+  }
+  
+  /* Títulos */
+  .login-container h1 {
+    font-size: 22px;
+    color: #003366; /* Azul escuro */
+    margin-bottom: 20px;
+  }
+  
+  /* Grupos de entrada */
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #0056b3; /* Azul para foco */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+  }
+  
+  /* Botão de login */
+  .login-button {
+    background: #003366; /* Azul escuro */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+  }
+  
+  .login-button:hover {
+    background: #00274d; /* Azul mais escuro */
+  }
+  
+  .login-button:active {
+    transform: scale(0.98); /* Efeito de clique */
+  }
+  
+  /* Estilo responsivo */
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 20px;
+    }
+  
+    .login-button {
+      font-size: 14px;
+    }
+  }
+  
