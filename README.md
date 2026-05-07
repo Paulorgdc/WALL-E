@@ -22,7 +22,7 @@
 ## 📸 Screenshots
 
 ### Project Entrance
-![Home Page](assets/screenshots/home-page.png)
+![Home Page](frontend/assets/screenshots/home-page.png)
 
 ### Student Experience
 <p align="center">
