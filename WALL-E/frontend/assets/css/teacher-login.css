@@ -1,40 +1,35 @@
-/* Estilo global */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #eef2f7; /* Fundo suave */
+    background-color: #eef2f7;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
   
-  /* Container principal */
   .login-container {
-    background: #ffffff; /* Fundo branco */
+    background: #ffffff;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 90%;
     text-align: center;
   }
   
-  /* Logo da universidade */
-  .university-logo {
-    max-width: 100px; /* Tamanho da logo */
-    margin: 0 auto 20px; /* Espaço abaixo da logo */
+  .logo {
+    max-width: 100px;
+    margin: 0 auto 20px;
   }
   
-  /* Títulos */
   .login-container h1 {
     font-size: 22px;
-    color: #003366; /* Azul escuro */
+    color: #003366;
     margin-bottom: 20px;
   }
   
-  /* Grupos de entrada */
   .input-group {
     margin-bottom: 20px;
     text-align: left;
@@ -58,13 +53,12 @@ body {
   
   .input-group input:focus {
     outline: none;
-    border-color: #0056b3; /* Azul para foco */
+    border-color: #0056b3;
     box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
   }
   
-  /* Botão de login */
   .login-button {
-    background: #003366; /* Azul escuro */
+    background: #003366;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -78,14 +72,13 @@ body {
   }
   
   .login-button:hover {
-    background: #00274d; /* Azul mais escuro */
+    background: #00274d;
   }
   
   .login-button:active {
-    transform: scale(0.98); /* Efeito de clique */
+    transform: scale(0.98);
   }
   
-  /* Estilo responsivo */
   @media (max-width: 480px) {
     .login-container {
       padding: 20px;

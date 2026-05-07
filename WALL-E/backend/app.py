@@ -5,13 +5,12 @@ app = Flask(__name__)
 @app.route('/api/chat', methods=['POST'])
 def chat_simulation():
     data = request.json
-    question = data.get("question", "")
+    user_question = data.get("question", "") # Variável em Inglês
 
-    # Simulação de resposta fixa
-    if "banco de dados" in question.lower():
+    if "banco de dados" in user_question.lower():
         answer = "Um banco de dados é uma coleção organizada de informações ou dados que podem ser acessados, gerenciados e atualizados."
     else:
-        answer = "Essa é uma resposta fixa simulada para qualquer pergunta."
+        answer = "Esta é uma resposta fixa simulada para qualquer pergunta."
 
     return jsonify({"answer": answer})
 

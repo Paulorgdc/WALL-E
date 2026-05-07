@@ -1,15 +1,13 @@
-/* Estilo global */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: #ffffff;
     display: flex;
-    flex-direction: column; /* Organização vertical */
-    min-height: 100vh; /* Garante altura mínima da tela */
+    flex-direction: column;
+    min-height: 100vh;
   }
   
-  /* Barra superior */
   .top-bar {
     background-color: #fafafa;
     padding: 15px 20px;
@@ -24,7 +22,6 @@ body {
     height: auto;
   }
   
-  /* Área principal */
   .dashboard {
     max-width: 1000px;
     margin: 30px auto;
@@ -32,10 +29,9 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1; /* Faz o conteúdo principal ocupar o espaço disponível */
+    flex: 1;
   }
   
-  /* Sessão de boas-vindas */
   .welcome-section {
     text-align: center;
     margin-bottom: 30px;
@@ -55,7 +51,6 @@ body {
     color: #666666;
   }
   
-  /* Sessão de matérias */
   .subjects-section h2 {
     font-size: 24px;
     color: #003366;
@@ -94,7 +89,6 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
-  /* Links rápidos */
   .quick-links h2 {
     font-size: 24px;
     color: #003366;
@@ -124,7 +118,6 @@ body {
     transform: scale(1.05);
   }
   
-  /* Rodapé */
   .footer {
     text-align: center;
     padding: 20px;
@@ -132,10 +125,10 @@ body {
     color: #666666;
     background-color: #f1f1f1;
     border-top: 1px solid #ddd;
-    margin-top: auto; /* Garante que o rodapé seja empurrado para o final */
+    margin-top: auto;
   }
-  /* Estilos do chat */
-.chat-box {
+
+  .chat-box {
   max-height: 300px;
   overflow-y: auto;
   margin-bottom: 20px;
