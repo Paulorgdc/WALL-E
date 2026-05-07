@@ -26,18 +26,18 @@
 
 ### Student Experience
 <p align="center">
-  <img src="assets/screenshots/student-login.png" width="45%" alt="Student Login" />
-  <img src="assets/screenshots/student-dashboard.png" width="45%" alt="Student Dashboard" />
+  <img src="frontend/assets/screenshots/student-login.png" width="45%" alt="Student Login" />
+  <img src="frontend/assets/screenshots/student-dashboard.png" width="45%" alt="Student Dashboard" />
 </p>
 
 ### Teacher Experience
 <p align="center">
-  <img src="assets/screenshots/teacher-login.png" width="45%" alt="Teacher Login" />
-  <img src="assets/screenshots/teacher-dashboard.png" width="45%" alt="Teacher Dashboard" />
+  <img src="frontend/assets/screenshots/teacher-login.png" width="45%" alt="Teacher Login" />
+  <img src="frontend/assets/screenshots/teacher-dashboard.png" width="45%" alt="Teacher Dashboard" />
 </p>
 
 ### Advanced Data View
-![Student List Modal](assets/screenshots/teacher-student-list.png)
+![Student List Modal](frontend/assets/screenshots/teacher-student-list.png)
 
 ---
 
