@@ -36,10 +36,8 @@
 <p align="center">
   <img src="frontend/assets/screenshots/teacher-login.png" width="45%" alt="Teacher Login" />
   <img src="frontend/assets/screenshots/teacher-dashboard.png" width="45%" alt="Teacher Dashboard" />
+  <img src="frontend/assets/screenshots/teacher-student-list.png" width="45%" alt="Teacher Student List Modal" />
 </p>
-
-### Advanced Data View
-![Student List Modal](frontend/assets/screenshots/teacher-student-list.png)
 
 ---
 
