@@ -1,4 +1,9 @@
-const studentData = {
+/**
+ * @fileoverview Teacher Dashboard Module
+ * Manages class rosters and student performance metrics modal views.
+ */
+
+const mockStudentRegistry = {
   "1º Semestre - A": [
     { name: "Ana Clara", id: "202312345", performance: "85%" },
     { name: "João Pedro", id: "202312346", performance: "90%" },
@@ -14,14 +19,22 @@ const studentData = {
   ],
 };
 
+/**
+ * Displays student performance modal for selected class section.
+ * @param {string} className 
+ */
 function showStudents(className) {
-  const modal = document.getElementById("student-modal");
-  const classTitle = document.getElementById("class-name");
-  const studentList = document.getElementById("student-list");
+  const modalContainer = document.getElementById("student-modal");
+  const modalClassTitle = document.getElementById("class-name");
+  const studentTableBody = document.getElementById("student-list");
 
-  classTitle.textContent = className;
+  if (!modalContainer || !studentTableBody || !mockStudentRegistry[className]) return;
 
-  studentList.innerHTML = studentData[className]
+  if (modalClassTitle) {
+    modalClassTitle.textContent = className;
+  }
+
+  studentTableBody.innerHTML = mockStudentRegistry[className]
     .map(
       (student) => `
     <tr>
@@ -33,12 +46,17 @@ function showStudents(className) {
     )
     .join("");
 
-  modal.style.display = "flex";
+  modalContainer.style.display = "flex";
 }
 
+/**
+ * Closes the active student performance modal window.
+ */
 function closeModal() {
-  const modal = document.getElementById("student-modal");
-  modal.style.display = "none";
+  const modalContainer = document.getElementById("student-modal");
+  if (modalContainer) {
+    modalContainer.style.display = "none";
+  }
 }
 
 document.addEventListener("keydown", (event) => {
@@ -46,6 +64,6 @@ document.addEventListener("keydown", (event) => {
 });
 
 window.addEventListener("click", (event) => {
-  const modal = document.getElementById("student-modal");
-  if (event.target === modal) closeModal();
+  const modalContainer = document.getElementById("student-modal");
+  if (event.target === modalContainer) closeModal();
 });

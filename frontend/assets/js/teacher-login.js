@@ -1,13 +1,25 @@
-document.getElementById("loginForm").onsubmit = function (event) {
+/**
+ * @fileoverview Teacher Login Module
+ * Handles educator portal login form submissions.
+ */
+
+const teacherLoginForm = document.getElementById("loginForm");
+
+if (teacherLoginForm) {
+  teacherLoginForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const teacherId = document.getElementById("cpf").value;
-    const password = document.getElementById("senha").value;
+    const cpfInput = document.getElementById("cpf");
+    const passwordInput = document.getElementById("senha");
 
-    if (teacherId.trim() === "" || password.trim() === "") {
-        alert("Por favor, preencha todos os campos.");
-        return;
+    const teacherCpf = cpfInput ? cpfInput.value.trim() : "";
+    const password = passwordInput ? passwordInput.value.trim() : "";
+
+    if (!teacherCpf || !password) {
+      alert("Por favor, preencha todos os campos.");
+      return;
     }
 
     window.location.href = "/teacher/dashboard";
+  });
 }

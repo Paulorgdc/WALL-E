@@ -1,51 +1,38 @@
-# WALL-E | Adaptive Learning Platform 🤖
+# 🤖 WALL-E: Adaptive Learning & Educational AI Platform
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+> **WALL-E** is an academic web-based adaptive learning platform designed to personalize educational content and provide interactive AI tutoring support for students and teachers.
 
-
-**WALL-E** is an adaptive learning platform designed to bridge the gap between students and teachers. It features a specialized dashboard for both roles and an **AI-simulated chatbot** to provide real-time support for students.
+![Category](https://img.shields.io/badge/CATEGORY-ACADEMIC_PROJECT-ff0055?style=for-the-badge)
+![Institution](https://img.shields.io/badge/UNIVAG-PROGRAMAÇÃO_RADICAL_2024-00f0ff?style=for-the-badge)
+![License](https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge)
 
 ---
 
-## 🚀 Features
+## 📌 Project Overview
 
-- **AI-Powered Chatbot:** Interactive widget in the student dashboard for instant queries (Simulated with Flask backend).
-- **Dual Role Access:** Dedicated interfaces for students and teachers.
-- **Student Management:** Teachers can view class lists and student performance metrics via interactive modals.
-- **Responsive Design:** Optimized layout for different screen sizes.
-- **Professional Backend:** Structured with Flask (Python) using clean routing and API principles.
+Developed during the **'Programação Radical 2024'** event at **UNIVAG**, **WALL-E** serves as a prototype for tailored educational experiences. The application provides dedicated portals for both students and educators, featuring an AI chat interface to answer technical questions and streamline study workflows.
 
 ---
 
-## 📸 Screenshots
+## ⚡ Tech Stack
 
-### Project Entrance
-![Home Page](frontend/assets/screenshots/home-page.png)
+- **Backend:** Python, Flask
+- **Frontend:** JavaScript (ES6+), HTML5, CSS3
+- **Architecture:** RESTful Simulation APIs / Server-Side Template Rendering
 
-### Student Experience
-<p align="center">
-  <img src="frontend/assets/screenshots/student-login.png" width="45%" alt="Student Login" />
-  <img src="frontend/assets/screenshots/student-dashboard.png" width="45%" alt="Student Dashboard" />
-</p>
+---
 
-### Teacher Experience
-<p align="center">
-  <img src="frontend/assets/screenshots/teacher-login.png" width="45%" alt="Teacher Login" />
-  <img src="frontend/assets/screenshots/teacher-dashboard.png" width="45%" alt="Teacher Dashboard" />
-  <img src="frontend/assets/screenshots/teacher-student-list.png" width="45%" alt="Teacher Student List Modal" />
-</p>
+## 🚀 Key Features
+
+* **Multi-Portal Architecture:** Separate workflows and dashboards for students and teachers.
+* **Interactive Chat Simulation:** Simulated intelligent assistant providing contextual learning answers.
+* **Responsive Learning Interface:** Clean dashboards optimized for study tracking and material access.
 
 ---
 
 ## 🛠️ Installation & Setup
 
-To run this project locally, follow these steps:
-
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/Paulorgdc/WALL-E.git](https://github.com/Paulorgdc/WALL-E.git)
-   cd WALL-E
+   git clone [https://github.com/Paulorgdc/wall-e.git](https://github.com/Paulorgdc/wall-e.git)
+   cd wall-e
